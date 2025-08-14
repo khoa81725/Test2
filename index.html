@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #image {
+            height: 300px;
+            width: 500px;
+            border: 2px solid #000;
+            background-color: #eee;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: black;
+        }
+
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Preview Example</h2>
+
+    <div id="image">Hover over an image below to display here.</div>
+
+    <img class="preview" src="https://via.placeholder.com/100/FF0000" alt="Red"
+         onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="https://via.placeholder.com/100/00FF00" alt="Green"
+         onmouseover="upDate(this)" onmouseout="undo()">
+    <img class="preview" src="https://via.placeholder.com/100/0000FF" alt="Blue"
+         onmouseover="upDate(this)" onmouseout="undo()">
+
+    <script src="script.js"></script>
+
+</body>
+</html>
